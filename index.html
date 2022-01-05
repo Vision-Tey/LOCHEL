@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>LOCHEL</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg  navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo cpmpassion.png" alt="" width="50" height="45">
+      </a>
+      <a href="#" class="navbar-brand">LOCHEL</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-primary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Causes</a></li>
+              <li><a class="dropdown-item" href="#">Events</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Team</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--home section-->
+  <section class="header text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <div class="hero vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 mx-auto text-center">
+            <p class="lead">LORD'S CHILDREN & ELDERLY COMPASSION</p>
+            <h1 class="display-4">Help the <span class="text-warning">Children & Elderly</span> who are in Need</h1>
+            <p class="text-light">Lorem ipsum isicing elit. poris voluptas minus debitis consectetur illum perspiciatis
+              nostrum.</p>
+            <a href="#" class="btn me-3 btn-primary">Make a Donation</a>
+            <a href="#" 
+            class="btn btn-outline-light" 
+            data-bs-toggle="modal"
+            data-bs-target="#enroll">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <h6 class="text-primary">Helping</h6>
+          <h1>Reasons for helping</h1>
+          <p class="lead">You should help other people out purely because you're a person and they're a person</p>
+        </div>
+      </div>
+      <div class="row text-center g-4">
+        <!-- <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="card-title mb-3">Virtual</h3>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iure, quas quidem possimus dolorum esse eligendi?
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-person-square"></i>
+              </div>
+              <h3 class="card-title mb-3">Hybrid</h3>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iure, quas quidem possimus dolorum esse eligendi?
+              </p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3 class="card-title mb-3">In Person</h3>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iure, quas quidem possimus dolorum esse eligendi?
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <img src="hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title mb-3">Positivity increase</h3>
+              <p class="card-text">Invest in people who have a chance of creating something that can help even more
+                people.
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card bg-secondary text-light">
+            <img src="hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title mb-3">It makes you happy</h3>
+              <p class="card-text">A study showed that helping others through volunteer work increased levels of
+                happiness in the participants.</p>
+              <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <img src="hero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">
+                Donating money to worthy organisations helps to alleviate poverty, hunger, homelessness and it can
+                improve community life by promoting honesty, friendliness and trust.
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h1 class="text-primary">Watch Our Latest Activities</h1>
+        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae
+          autem.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="IMG_4398.JPG" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
+          data-aos-delay="100">
+          <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua.
+          </p>
+          <ul>
+            <li>
+              <i class="bx bx-store-alt"></i>
+              <div>
+                <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+              </div>
+            </li>
+            <li>
+              <i class="bx bx-images"></i>
+              <div>
+                <h5>Magnam soluta odio exercitationem reprehenderi</h5>
+                <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+              </div>
+            </li>
+          </ul>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+          <a href="#" class="btn me-3 btn-primary">Donate now</a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+  <section class="p-5 bg-secondary">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="text-light">Featured Causes</h1>
+      </div>
+
+      <div class="row text-center g-4">
+        <div class="col-md">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1535025639604-9a804c092faa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6cb0ceb620f241feb2f859e273634393&auto=format&fit=crop&w=500&q=80"
+              alt="Card image cap">
+            <span class="text-secondary ">Rasised: $5,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;Goal: $100,000</span>
+            <div class="progress">
+              <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100" style="width:5%">
+                <span class="sr-only">5% Complete</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Water for all</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet
+                aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis
+                harum illo impedit incidunt laborum laudantium...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1535025639604-9a804c092faa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6cb0ceb620f241feb2f859e273634393&auto=format&fit=crop&w=500&q=80"
+              alt="Card image cap">
+            <span class="text-secondary ">Rasised: $30,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;
+              &nbsp;Goal: $100,000</span>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100" style="width:30%">
+                <span class="sr-only">30% Complete</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet
+                aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis
+                harum illo impedit incidunt laborum laudantium...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1535025639604-9a804c092faa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6cb0ceb620f241feb2f859e273634393&auto=format&fit=crop&w=500&q=80"
+              alt="Card image cap">
+            <span class="text-secondary ">Rasised: $50,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;
+              &nbsp;Goal: $100,000</span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:50%">
+                <span class="sr-only">50% Complete</span>
+              </div>
+            </div>
+            <div class="card-body">
+
+              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet
+                aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis
+                harum illo impedit incidunt laborum laudantium...
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bi bi-emoji-smile"></i>
+            <h1>30,000 +</h1>
+            <p>Target Population</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="count-box">
+            <i class="bi bi-journal-richtext"></i>
+            <h1>12 +</h1>
+            <p>Projects</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-headset"></i>
+            <h1>50 +</h1>
+            <p>Finished Events</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-people"></i>
+            <h1>15 +</h1>
+            <p>Hard Workers</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Counts Section -->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <h1>Latest Activities in Pictures </h1>
+        </div>
+      </div>
+      <!-- Gallery -->
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+            class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+            class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+            class="w-100 shadow-1-strong rounded mb-4 d-none d-sm-block" alt="Mountains in the Clouds" />
+
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+            class="w-100 shadow-1-strong rounded mb-4 d-none d-sm-block" alt="Boat on Calm Water" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+            class="w-100 shadow-1-strong rounded mb-4 d-none d-sm-block" alt="Waves at Sea" />
+
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+            class="w-100 shadow-1-strong rounded mb-4 d-none d-sm-block" alt="Yosemite National Park" />
+        </div>
+      </div>
+      <!-- Gallery -->
+    </div>
+  </section>
+
+
+  <section id="instructors" class="p-5 bg-primary">
+    <div class="container">
+      <h2 class="text-center text-white">Our Instructors</h2>
+      <p class="lead text-center text-white mb-5">
+        Our instructors all have 5+ years working as a web developer in the
+        industry
+      </p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="IMG_20100101_065133.JPG"
+                class="rounded-circle mb-3 reduce"
+                alt=""
+              />
+              <h3 class="card-title mb-3">John Doe</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/11.jpg"
+                class="rounded-circle mb-3"
+                alt=""
+              />
+              <h3 class="card-title mb-3">Jane Doe</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="0D2A6557_2.JPG"
+                class="rounded-circle mb-3 reduce"
+                alt=""
+              />
+              <h3 class="card-title mb-3">Steve Smith</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/12.jpg"
+                class="rounded-circle mb-3"
+                alt=""
+              />
+              <h3 class="card-title mb-3">Sara Smith</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Contact Us</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  Full Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script>
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add('bg-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    })
+  </script>
+</body>
+
+</html>
