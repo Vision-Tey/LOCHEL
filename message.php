@@ -6,13 +6,13 @@
 
      
      
-    $receiver = "lordschildrenandelderly@gmail.com";
+    $to = "lordschildrenandelderly@gmail.com";
     $subject = "From: $name <$email>";
     $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage: $message\n\nRegards, \n$name";
     $sender = "From: $email";
             
             
-    mail($receiver, $subject, $body, $sender)
+    mail($to, $subject, $body, $sender)
 
     header("Location: index.html");
 
