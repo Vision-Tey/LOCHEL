@@ -5,10 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <link rel="shortcut icon" type="x-icon" href="logo cpmpassion.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="style.css" />
   <title>LOCHEL</title>
 </head>
@@ -21,7 +25,7 @@
       <a class="navbar-brand" href="#">
         <img src="logo cpmpassion.png" alt="" width="50" height="45">
       </a>
-      <a href="#" class="navbar-brand">LOCHEL</a>
+      <a href="#home" class="navbar-brand">LOCHEL <span class="text-primary fw-bolder">.</span></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
@@ -30,10 +34,10 @@
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link text-primary">Home</a>
+            <a href="#home" class="nav-link text-primary">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Blog</a>
@@ -44,8 +48,8 @@
               Pages
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">Causes</a></li>
-              <li><a class="dropdown-item" href="#">Events</a></li>
+              <li><a class="dropdown-item" href="#causes">Causes</a></li>
+              <li><a class="dropdown-item" href="#events">Events</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -53,14 +57,14 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Services</a>
+            <a href="#services" class="nav-link">Services</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Team</a>
+            <a href="#instructors" class="nav-link">Team</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -68,20 +72,17 @@
   </nav>
 
   <!--home section-->
-  <section class="header text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+  <section id="home" class="header text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
     <div class="hero vh-100 d-flex align-items-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-9 mx-auto text-center">
             <p class="lead">LORD'S CHILDREN & ELDERLY COMPASSION</p>
             <h1 class="display-4">Help the <span class="text-warning">Children & Elderly</span> who are in Need</h1>
-            <p class="text-light">Lorem ipsum isicing elit. poris voluptas minus debitis consectetur illum perspiciatis
-              nostrum.</p>
-            <a href="#" class="btn me-3 btn-primary">Make a Donation</a>
-            <a href="#" 
-            class="btn btn-outline-light" 
-            data-bs-toggle="modal"
-            data-bs-target="#enroll">Contact Us</a>
+            <!-- <p class="text-light">Lorem ipsum isicing elit. poris voluptas minus debitis consectetur illum perspiciatis
+              nostrum.</p> -->
+            <a href="donate.html" class="btn me-3 btn-primary">Make a Donation</a>
+            <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#enroll">Contact Us</a>
           </div>
         </div>
       </div>
@@ -146,7 +147,7 @@
         </div> -->
         <div class="col-md">
           <div class="card bg-dark text-light">
-            <img src="hero.jpg" class="card-img-top" alt="...">
+            <img src="images/positivity.jpg" height="250" class="card-img-top" alt="...">
             <div class="card-body">
               <h3 class="card-title mb-3">Positivity increase</h3>
               <p class="card-text">Invest in people who have a chance of creating something that can help even more
@@ -159,7 +160,7 @@
 
         <div class="col-md">
           <div class="card bg-secondary text-light">
-            <img src="hero.jpg" class="card-img-top" alt="...">
+            <img src="images/hapiness.jpg" height="250" class="card-img-top" alt="...">
             <div class="card-body">
               <h3 class="card-title mb-3">It makes you happy</h3>
               <p class="card-text">A study showed that helping others through volunteer work increased levels of
@@ -171,7 +172,7 @@
 
         <div class="col-md">
           <div class="card bg-dark text-light">
-            <img src="hero.jpg" class="card-img-top" alt="...">
+            <img src="images/friendliness.jpg" height="250" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">
                 Donating money to worthy organisations helps to alleviate poverty, hunger, homelessness and it can
@@ -191,51 +192,50 @@
 
       <div class="section-title">
         <h1 class="text-primary">Watch Our Latest Activities</h1>
-        <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae
-          autem.</p>
+        <p class="fs-5">We are working hard on three fronts which are about to be presented. </p>
       </div>
 
       <div class="row">
         <div class="col-lg-6">
-          <img src="IMG_4398.JPG" class="img-fluid" alt="">
+          <video width="500" height="500" controls>
+            <source src="videos/construction-activity.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <!-- <img src="IMG_4398.JPG" class="img-fluid" alt=""> -->
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
           data-aos-delay="100">
-          <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+          
+          <h3>Our Activities are based on our three Objectives listed;</h3>
           <p class="fst-italic">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua.
+            To assist the Needy children, To assist the Elderly and To assist the Orphans
           </p>
-          <ul>
-            <li>
-              <i class="bx bx-store-alt"></i>
+          
+              
               <div>
-                <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                <h4 class="text-secondary">Providing Safe Water to communities</h4>
+                <p>We have carried out water source protection in some communities by rehabilitating the 
+                  available water reservors and sources with the available resources, clearing and protecting 
+                  them and this has so far improved people's health and provided safe water for human consumption.
+                </p>
               </div>
-            </li>
-            <li>
-              <i class="bx bx-images"></i>
+          
+              
               <div>
-                <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                <h4 class="text-secondary">Assisting children with educational requirements</h4>
+                <p>We believe every child deserves a chance to an education and it's our passion to see children 
+                  and the communities have their potentials unlocked through our work and we have tried this by 
+                providing scholastic materials to a number of people in our support community.</p>
               </div>
-            </li>
-          </ul>
-          <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
-          </p>
-          <a href="#" class="btn me-3 btn-primary">Donate now</a>
+          
+          <a href="donate.html" class="btn me-3 btn-primary">Donate now</a>
         </div>
       </div>
 
     </div>
   </section><!-- End About Section -->
 
-  <section class="p-5 bg-secondary">
+  <section id="causes" class="p-5 bg-secondary">
     <div class="container">
       <div class="text-center">
         <h1 class="text-light">Featured Causes</h1>
@@ -245,7 +245,7 @@
         <div class="col-md">
           <div class="card">
             <img class="card-img-top"
-              src="https://images.unsplash.com/photo-1535025639604-9a804c092faa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6cb0ceb620f241feb2f859e273634393&auto=format&fit=crop&w=500&q=80"
+              src="images/water source.PNG"
               alt="Card image cap">
             <span class="text-secondary ">Rasised: $5,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp;Goal: $100,000</span>
@@ -256,12 +256,13 @@
               </div>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Water for all</h5>
+              <h5 class="card-title">Water and Sanitation</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet
-                aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis
-                harum illo impedit incidunt laborum laudantium...
+                Growing up in a clean and safe environment is every person's right.
+                 Access to clean water, basic toilets, and good hygiene practices 
+                 not only keeps the community thriving, but also gives them a healthier life...
               </p>
+              <a href="#" class="btn me-3 btn-secondary">Read More</a>
             </div>
           </div>
         </div>
@@ -269,7 +270,7 @@
         <div class="col-md">
           <div class="card">
             <img class="card-img-top"
-              src="https://images.unsplash.com/photo-1535025639604-9a804c092faa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6cb0ceb620f241feb2f859e273634393&auto=format&fit=crop&w=500&q=80"
+              src="images/scholastic-materials.jpg" height="200"
               alt="Card image cap">
             <span class="text-secondary ">Rasised: $30,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp;
@@ -281,12 +282,13 @@
               </div>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <h5 class="card-title">Education and Shelter</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet
-                aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis
-                harum illo impedit incidunt laborum laudantium...
+                <strong>LOCHEL</strong> works around to support learning for every boy and girl, especially 
+                to the needy groups and this will be done along with improving and providing 
+                shelter in form of buildings to improve their lives...
               </p>
+              <a href="#" class="btn me-3 btn-secondary">Read More</a>
             </div>
           </div>
         </div>
@@ -294,7 +296,7 @@
         <div class="col-md">
           <div class="card">
             <img class="card-img-top"
-              src="https://images.unsplash.com/photo-1535025639604-9a804c092faa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6cb0ceb620f241feb2f859e273634393&auto=format&fit=crop&w=500&q=80"
+              src="images/agriculture1.jpeg"
               alt="Card image cap">
             <span class="text-secondary ">Rasised: $50,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp;
@@ -307,12 +309,13 @@
             </div>
             <div class="card-body">
 
-              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <h5 class="card-title">Food and Agriculrure Improvement</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet
-                aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis
-                harum illo impedit incidunt laborum laudantium...
+                Food being an essential basic need is also our major cause to 
+                focus on and this will be improved by building food systems that
+                can feed the needy through investing in improved agriculture...
               </p>
+              <a href="#" class="btn me-3 btn-secondary">Read More</a>
             </div>
           </div>
         </div>
@@ -364,6 +367,71 @@
     </div>
   </section><!-- End Counts Section -->
 
+   <!-- ======= Services Section ======= -->
+   <section id="services" class="services">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <p class="text-primary">Services</p>
+        <h1>Check our <span>Services</span></h1>
+        <p>LOCHEL works in Isingiro district to assist the children and the Elderly to help them fulfill their poteintial</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <h4><a href=""><i class="fas fa-hand-holding-heart"></i> Donate</a></h4>
+            <p class="fs-5">It's not the amount that matters but the meaning behind your donation.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-donate"></i></div>
+            <h4><a href="">Sponsor</a></h4>
+            <p class="fs-5">We work to save people's lives by providing education, health, water and Sanitation services</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-funnel-dollar"></i></div>
+            <h4><a href="">Fundraise</a></h4>
+            <p class="fs-5">Let's achieve change together through the gift of giving. And that's what we go by.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-hands-helping"></i></div>
+            <h4><a href="">Volunteer</a></h4>
+            <p class="fs-5">Go out into the world and do good until there is too much good in the world.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-users-cog"></i></div>
+            <h4><a href="">Partner</a></h4>
+            <p class="fs-5">Alone we can do so little. Together we can do so much, partner with Us.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="fas fa-user-md"></i></div>
+            <h4><a href=""><i class="fas fa-user-md"></i>Jobs</a></h4>
+            <p class="fs-5">LOCHEL works with a target of providing employments to the people in the community</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+
   <section>
     <div class="container">
       <div class="row">
@@ -374,26 +442,26 @@
       <!-- Gallery -->
       <div class="row">
         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+          <img src="images/construction.jpg" height="200"
             class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
 
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+          <img src="images/activitity1.jpg" height="550"
             class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
         </div>
 
         <div class="col-lg-4 mb-4 mb-lg-0">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+          <img src="images/activity3.jpeg" height="550"
             class="w-100 shadow-1-strong rounded mb-4 d-none d-sm-block" alt="Mountains in the Clouds" />
 
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+          <img src="images/activity2.jpeg" height="200"
             class="w-100 shadow-1-strong rounded mb-4 d-none d-sm-block" alt="Boat on Calm Water" />
         </div>
 
         <div class="col-lg-4 mb-4 mb-lg-0">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+          <img src="images/agriculture2.jpeg"
             class="w-100 shadow-1-strong rounded mb-4 d-none d-sm-block" alt="Waves at Sea" />
 
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+          <img src="images/trench-activity.jpeg" height="550"
             class="w-100 shadow-1-strong rounded mb-4 d-none d-sm-block" alt="Yosemite National Park" />
         </div>
       </div>
@@ -404,24 +472,19 @@
 
   <section id="instructors" class="p-5 bg-primary">
     <div class="container">
-      <h2 class="text-center text-white">Our Instructors</h2>
-      <p class="lead text-center text-white mb-5">
+      <h2 class="text-center text-white mb-5">Our Volunteers</h2>
+      <!-- <p class="lead text-center text-white mb-5">
         Our instructors all have 5+ years working as a web developer in the
         industry
-      </p>
+      </p> -->
       <div class="row g-4">
         <div class="col-md-6 col-lg-3">
           <div class="card bg-light">
             <div class="card-body text-center">
-              <img
-                src="IMG_20100101_065133.JPG"
-                class="rounded-circle mb-3 reduce"
-                alt=""
-              />
-              <h3 class="card-title mb-3">John Doe</h3>
+              <img src="images/Amon-profile.jpeg" class="rounded-circle mb-3 reduce" alt="" />
+              <h3 class="card-title mb-3">Rwakaizi Amon</h3>
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                Volunteer Program Manager  
               </p>
               <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -434,15 +497,10 @@
         <div class="col-md-6 col-lg-3">
           <div class="card bg-light">
             <div class="card-body text-center">
-              <img
-                src="https://randomuser.me/api/portraits/women/11.jpg"
-                class="rounded-circle mb-3"
-                alt=""
-              />
-              <h3 class="card-title mb-3">Jane Doe</h3>
+              <img src="images/anah-profile.jpg" class="rounded-circle mb-3 reduce" alt="" />
+              <h3 class="card-title mb-3">Anah Karuhanga</h3>
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                Volunteer 
               </p>
               <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -455,15 +513,10 @@
         <div class="col-md-6 col-lg-3">
           <div class="card bg-light">
             <div class="card-body text-center">
-              <img
-                src="0D2A6557_2.JPG"
-                class="rounded-circle mb-3 reduce"
-                alt=""
-              />
-              <h3 class="card-title mb-3">Steve Smith</h3>
+              <img src="images/Vision_profile.jpg" class="rounded-circle mb-3 reduce" alt="" />
+              <h3 class="card-title mb-3">Vision Tey</h3>
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                Volunteer
               </p>
               <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -476,15 +529,10 @@
         <div class="col-md-6 col-lg-3">
           <div class="card bg-light">
             <div class="card-body text-center">
-              <img
-                src="https://randomuser.me/api/portraits/women/12.jpg"
-                class="rounded-circle mb-3"
-                alt=""
-              />
-              <h3 class="card-title mb-3">Sara Smith</h3>
+              <img src="images/lydia-profile.jpeg" class="rounded-circle mb-3 reduce" alt="" />
+              <h3 class="card-title mb-3">Nshemeza Lydia</h3>
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+               Volunteer
               </p>
               <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -499,78 +547,186 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="enroll"
-      tabindex="-1"
-      aria-labelledby="enrollLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="enrollLabel">Contact Us</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p class="lead">Fill out this form and we will get back to you</p>
-            <form>
-              <div class="mb-3">
-                <label for="first-name" class="col-form-label">
-                  Full Name:
-                </label>
-                <input type="text" class="form-control" id="first-name" />
-              </div>
-              
-              <div class="mb-3">
-                <label for="email" class="col-form-label">Email:</label>
-                <input type="email" class="form-control" id="email" />
-              </div>
-              <div class="mb-3">
-                <label for="phone" class="col-form-label">Phone:</label>
-                <input type="tel" class="form-control" id="phone" />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Submit</button>
-          </div>
+  <!-- Contact & Map -->
+  <section id="contact" class="p-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md">
+          <h2 class="text-center mb-4">Contact Info</h2>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item">
+              <span class="fw-bold">Main Location:</span> Kabuyanda T/C Isingiro
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Office Phone:</span> (555) 555-5555
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Team Leader Phone:</span> (333) 333-3333
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Email:</span> (555)
+              enroll@frontendbc.test
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Volunteer Email:</span>
+              student@frontendbc.test
+            </li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <div id="map"></div>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>LOCHEL<span>.</span></h3>
+            <p>
+              Kabuyanda T/C <br>
+              Isingiro West, Isingiro<br>
+              Western Region <br>
+              Uganda. <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Donate</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Sponsor</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Fundraise</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Volunteer</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Partner</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Jobs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+
+            
+            <h4>Our Social Networks</h4>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-whatsapp"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <a href="#" class="btn btn-outline-secondary mt-5" data-bs-toggle="modal" data-bs-target="#enroll">Contact Us by clicking here</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>LOCHEL</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+        Designed by <a href="#">Tey</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill out this form and we will get back to you</p>
+          <form>
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label">
+                Full Name:
+              </label>
+              <input type="text" class="form-control" name="name" id="first-name" />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" name="email" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="col-form-label">Phone:</label>
+              <input type="tel" class="form-control" name="phone" id="phone" />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">Type message</label>
+              <textarea class="form-control rounded-0" name="message" id="exampleFormControlTextarea2" rows="3"></textarea>
+            </div>
+            <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+           <span class="text-success">Sending your message</span>
+        </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidmlzaW9udGV5IiwiYSI6ImNreTJvNzI2ODBiMzUybm4xNGk4czZ4cXoifQ.Ypga4y4s1dxEldoEMt4f3w';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [30.6090100, -0.9579300],
+      zoom: 11,
+    });
+  </script>
+
   <script>
     var nav = document.querySelector('nav');
 
@@ -582,6 +738,8 @@
       }
     })
   </script>
+
+  <script src="/script.js"></script>
 </body>
 
 </html>
