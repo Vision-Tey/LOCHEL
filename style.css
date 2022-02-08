@@ -32,7 +32,9 @@ section{
     padding-bottom: 30px;
   }
 
-  
+  video {
+    object-fit: cover;
+  }
 
   .counts {
   padding: 70px 0 60px;
