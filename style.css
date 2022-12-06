@@ -259,6 +259,10 @@ section{
   display: none;
 }
 
+.team_container{
+  display: flex;
+}
+
 
 
 
